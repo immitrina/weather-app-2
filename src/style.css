@@ -1,0 +1,9 @@
+.weatherApp {
+  border-style: solid;
+  border-width: 10px;
+  border-color: green;
+}
+
+.sunImage {
+  max-width: 50px;
+}
