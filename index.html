@@ -15,27 +15,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherApp">
-        <h1>Oceanside, CA</h1>
-        <ul>
-          <li>Monday 5:00</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/169/169367.png"
-              alt="sun"
-              class="sunImage"
-            />
-            75° F | C
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weatherApp">
+          <h1>Oceanside, CA</h1>
+          <div class="weather-summary">
             <ul>
-              <li>Precitipation: 1%</li>
-              <li>Humitidy: 68%</li>
-              <li>Wind: 11 mph</li>
+              <li>Monday 5:00</li>
+              <li>Clear</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="main-weather-emoji">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+                  alt="sun"
+                  class="sunImage"
+                />
+              </div>
+              <div class="current-weather">
+                <strong id="temperature">75°</strong>
+                <span class="units">F | C</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precitipation: 1%</li>
+                <li>Humitidy: 68%</li>
+                <li>Wind: 11 mph</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small>
