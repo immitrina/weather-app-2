@@ -57,6 +57,10 @@ li {
   font-size: 14px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 #temperature {
   position: relative;
   top: 45px;
