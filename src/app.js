@@ -37,6 +37,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "6048019de1a84df24f7d81b812b1b98f";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=imperial`;
+let city = "Oceanside";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
 axios.get(apiUrl).then(displayTemperature);
