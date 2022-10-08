@@ -1,5 +1,13 @@
 body {
   font-family: "century gothic";
+  background: rgb(121, 9, 9);
+  background: radial-gradient(
+    circle,
+    rgba(121, 9, 9, 0.6974498417531074) 35%,
+    rgba(236, 255, 0, 1) 66%,
+    rgba(255, 141, 0, 1) 100%
+  );
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -34,7 +42,7 @@ li:first-letter {
   padding-bottom: 0px;
   border-style: solid;
   border-width: 10px;
-  border-color: green;
+  border-color: black;
   border-radius: 20px;
 }
 
