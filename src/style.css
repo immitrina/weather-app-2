@@ -1,13 +1,13 @@
 body {
   font-family: "century gothic";
-  background: rgb(121, 9, 9);
-  background: radial-gradient(
+  background-image: radial-gradient(
     circle,
-    rgba(121, 9, 9, 0.6974498417531074) 35%,
-    rgba(236, 255, 0, 1) 66%,
-    rgba(255, 141, 0, 1) 100%
+    #fffd67,
+    #fedc47,
+    #fabb2d,
+    #f49a1a,
+    #eb7712
   );
-  background-repeat: no-repeat;
 }
 
 h1 {
@@ -31,12 +31,12 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
+  max-width: 500px;
+  margin: 250px auto;
 }
 
 .weatherApp {
-  max-width: 600px;
+  max-width: 500px;
   margin: 10px auto;
   padding: 15px;
   padding-bottom: 0px;
@@ -58,8 +58,9 @@ li:first-letter {
 .current-weather {
   position: relative;
   left: 80px;
-  bottom: 70px;
+  bottom: 75px;
   font-size: 18px;
+  line-height: 1px;
 }
 
 .units {
@@ -89,4 +90,8 @@ a:link {
 
 #fahrenheit-link {
   color: black;
+}
+
+#github-link {
+  color: #c15a00;
 }
