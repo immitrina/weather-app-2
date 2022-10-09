@@ -82,3 +82,11 @@ a:link {
   padding-bottom: 0px;
   line-height: 1px;
 }
+
+#celsius-link {
+  color: black;
+}
+
+#fahrenheit-link {
+  color: black;
+}
