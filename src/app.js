@@ -21,6 +21,29 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Wed", "Thurs", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col-2">
+           <div class="forecast-date">
+              ${day}
+          </div>
+           <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="sun-in-clouds" width="40">
+          <div class="forecast-temperature">
+             <span class="forecast-max">80°</span> <span class="forecast-min">72°</span>
+           </div>
+        </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let tempElement = document.querySelector("#temperature");
   let locationElement = document.querySelector("#location");
@@ -82,3 +105,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("Oceanside");
+displayForecast();
